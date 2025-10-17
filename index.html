@@ -17,14 +17,14 @@
 
 <body>
 
-  <form action="" method="post" class="contact-form">
+  <form action="" method="" class="contact-form">
     <h1>Contact Us</h1>
     <feildset class="feildset-info">
-      <label form="first-name">First Name <sup>*</sup></label>
+      <label form="first-name" id="label-firs-name">First Name <sup>*</sup></label>
       <input type="text" id="first-name" name="first-name" required>
       <p>This field is required</p>
 
-      <label form="last-name">Last Name <sup>*</sup></label>
+      <label form="last-name" id="label-last-name">Last Name <sup>*</sup></label>
       <input type="text" id="last-name" name="last-name" required>
       <p>This field is required</p>
 
@@ -34,20 +34,26 @@
       <p>This field is required</p>
     </feildset>
 
-    <p>Query Type <sup>*</sup></p>
-    <div>
-      <input type="radio" id="radio-general-enquiry" name="radio-general-enquiry">
-      <label for="radio-general-enquiry">General Enquiry</label>
-    </div>
-    <div>
-      <input type="radio" id="radio-support-request" name="radio-support-request">
-      <label for="radio-support-request">Support Request</label>
-      <p>Please select a query type</p>
-    </div>
+    <fieldset class="feildset-query-type">
+      <p>Query Type <sup>*</sup></p>
 
-    <p>Message <sup>*</sup></p>
-    <input type="text" id="Message" name="Message" required>
-    <p>This field is required</p>
+      <div>
+        <input type="radio" id="radio-general-enquiry" name="query-type">
+        <label for="radio-general-enquiry">General Enquiry</label>
+      </div>
+
+      <div>
+        <input type="radio" id="radio-support-request" name="query-type">
+        <label for="radio-support-request">Support Request</label>
+      </div>
+
+      <p>Please select a query type</p>
+
+      <p>Message <sup>*</sup></p>
+      <textarea id="Message" name="Message" rows="5" cols="25" required></textarea>
+      <p>This field is required</p>
+
+    </fieldset>
 
     <input type="checkbox" id="checkbox-contacte" name="checkbox-contacte">
     <label for="checkbox-contacte">I consent to being contacted by the team</label>
