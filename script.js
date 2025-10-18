@@ -34,7 +34,6 @@ function validateForm(event) {
         return false; 
 		
     } else {
-        console.log("Form is NOT valid. Browser will show default error messages.");
         return true;
     }
 }
