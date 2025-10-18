@@ -52,7 +52,9 @@ body {
     text-align: center;
     position: fixed;
     top: 1%;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 label {
@@ -142,10 +144,6 @@ textarea:focus {
     cursor: pointer;
 }
 
-.radio-option:hover {
-    border-color: var(--green-medium);
-}
-
 .radio-option label {
     margin: 0;
     cursor: pointer;
@@ -176,6 +174,19 @@ textarea:focus {
 
 .radio-option input[type="radio"]:checked::before {
     transform: scale(1);
+}
+
+.radio-option:hover {
+    background-color: var(--green-lighter);
+}
+
+.radio-option:has(input[type="radio"]:focus) {
+    border: 2px solid var(--green-medium);
+}
+
+.radio-option input[type="radio"]:checked {
+    border-color: var(--green-medium);
+    background-color: var(--white);
 }
 
 .div-checkbox-contacte {
@@ -250,14 +261,17 @@ textarea:focus {
 
     .contact-form {
         width: clamp(400px, 90%, 44rem);
+        margin: 5vh;
     }
 
     .success-message {
         padding: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-block-end: 0.5rem;
         position: fixed;
         top: 0px;
-        left: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
     }
 
     .feildset-info {
