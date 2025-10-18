@@ -30,15 +30,18 @@
         <div class="form-group">
           <label for="first-name">First Name <span>*</span></label>
           <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+          <p id="first-name-required" class="class-p-required">This field is required</p>
         </div>
         <div class="form-group">
           <label for="last-name">Last Name <span>*</span></label>
           <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+          <p id="last-name-required" class="class-p-required">This field is required</p>
         </div>
       </div>
       <div class="form-group full-width-group">
         <label for="email">Email Address <span>*</span></label>
         <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+        <p id="email-required" class="class-p-required">Please enter a valid email address</p>
       </div>
 
       <fieldset class="feildset-query-type">
@@ -52,19 +55,20 @@
             <input type="radio" id="support-request" name="query-type" required>
             <label for="support-request">Support Request</label>
           </div>
+          <p id="query-type-required" class="class-p-required">Please select a query type</p>
         </div>
       </fieldset>
 
       <div class="form-group full-width-group">
         <label for="message">Message <span>*</span></label>
         <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+        <p id="message-required" class="class-p-required">This field is required</p>
       </div>
 
       <div class="div-checkbox-contacte full-width-group">
         <input type="checkbox" id="consent" name="consent" required>
         <label for="consent">I consent to being contacted by the team <span>*</span></label>
       </div>
-
       <button type="submit" id="btn-submit" value="Submit">Submit</button>
     </form>
   </div>

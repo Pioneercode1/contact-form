@@ -43,9 +43,9 @@ body {
 }
 
 .success-message {
-    background-color: var(--green-lighter);
-    border: 1px solid var(--green-medium);
-    color: var(--grey-darker);
+    background-color: var(--green-medium);
+    border: 2px solid var(--green-medium);
+    color: var(--white);
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
@@ -54,7 +54,13 @@ body {
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
+    width: auto;
     z-index: 999;
+}
+.class-p-required {
+    display: none;
+    color: var(--red);
+    font-size: 0.7rem;
 }
 
 label {
@@ -105,6 +111,7 @@ textarea {
 input:hover,
 textarea:hover {
     border-color: var(--green-medium);
+    background-color: var(--green-lighter);
     cursor: pointer;
 }
 
@@ -112,6 +119,7 @@ input:focus,
 textarea:focus {
     outline: none;
     border: 2px solid var(--green-medium);
+    background-color: var(--green-lighter);
 }
 
 .feildset-query-type {
@@ -267,10 +275,6 @@ textarea:focus {
     .success-message {
         padding: 0.5rem;
         margin-block-end: 0.5rem;
-        position: fixed;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%);
         width: auto;
     }
 
