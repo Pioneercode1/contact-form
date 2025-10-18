@@ -56,6 +56,7 @@ label {
 
 .feildset-info {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -110,6 +111,9 @@ textarea:focus {
 
 .query-options {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 1rem;
 }
 
@@ -117,6 +121,7 @@ textarea:focus {
     flex: 1;
     display: flex;
     align-items: center;
+    width: 100%;
     border: 1px solid var(--grey-medium);
     border-radius: 8px;
     padding: 0.5rem 1rem;
@@ -172,6 +177,11 @@ textarea:focus {
     margin: 0;
 }
 
+.div-checkbox-contacte label:hover {
+    color: var(--green-medium);
+    cursor: pointer;
+}
+
 .div-checkbox-contacte input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -223,9 +233,25 @@ textarea:focus {
     background-color: var(--grey-darker);
 }
 
-@media (max-width: 768px) {
-    .feildset-info {
-        flex-direction: column;
-        gap: 0;
+@media (min-width: 48rem) {
+
+    .contact-form {
+        width: clamp(400px, 90%, 44rem);
     }
+
+    .feildset-info {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .query-options {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .radio-option {
+        width: 100%;
+    }
+
 }
