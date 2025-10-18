@@ -21,48 +21,39 @@
     <h1>Contact Us</h1>
     <feildset class="feildset-info">
       <label form="first-name" id="label-firs-name">First Name <sup>*</sup></label>
-      <input type="text" id="first-name" name="first-name" required>
-      <p>This field is required</p>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
 
       <label form="last-name" id="label-last-name">Last Name <sup>*</sup></label>
-      <input type="text" id="last-name" name="last-name" required>
-      <p>This field is required</p>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
 
       <label for="email">Email <sup>*</sup></label>
-      <input type="email" class="email-address" name="email-address" required>
-      <p>Please enter a valid email address</p>
-      <p>This field is required</p>
+      <input type="email" class="email-address" name="email-address" placeholder="Enter your email-address" required>
     </feildset>
 
     <fieldset class="feildset-query-type">
       <p>Query Type <sup>*</sup></p>
 
       <div>
-        <input type="radio" id="radio-general-enquiry" name="query-type">
+        <input type="radio" id="radio-general-enquiry" name="query-type" placeholder="Please select a query type" required>
         <label for="radio-general-enquiry">General Enquiry</label>
       </div>
 
       <div>
-        <input type="radio" id="radio-support-request" name="query-type">
+        <input type="radio" id="radio-support-request" name="query-type" placeholder="Please select a query type" required>
         <label for="radio-support-request">Support Request</label>
       </div>
 
-      <p>Please select a query type</p>
-
       <p>Message <sup>*</sup></p>
-      <textarea id="Message" name="Message" rows="5" cols="25" required></textarea>
-      <p>This field is required</p>
+      <textarea id="Message" name="Message" rows="6" cols="23" placeholder="please enter your Message" required></textarea>
 
     </fieldset>
 
-    <input type="checkbox" id="checkbox-contacte" name="checkbox-contacte">
-    <label for="checkbox-contacte">I consent to being contacted by the team</label>
-    <p>To submit this form, please consent to being contacted</p>
+    <div class="div-checkbox-contacte">
+      <input type="checkbox" id="checkbox-contacte" name="checkbox-contacte" placeholder="To submit this form, please consent to being contacted" required>
+      <label for="checkbox-contacte" id="label-checkbox-contacte">I consent to being contacted by the team <sup>*</sup></label>
+    </div>
 
     <input type="submit" id="btn-submit" value="Submit">
-
-    <p>Message Sent!</p>
-    <p>Thanks for completing the form. We'll be in touch soon!</p>
 
   </form>
 
