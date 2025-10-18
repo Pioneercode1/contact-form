@@ -19,8 +19,12 @@
 
   <div class="contact-form">
     <h1>Contact Us</h1>
+    <div id="success-message" class="success-message" style="display: none;">
+      <p>✅ Message Sent!</p>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
 
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="contact-form2" onsubmit="return validateForm(event)">
       <div class="feildset-info">
         <div class="form-group">
           <label for="first-name">First Name <span>*</span></label>
@@ -60,7 +64,7 @@
         <label for="consent">I consent to being contacted by the team <span>*</span></label>
       </div>
 
-      <button type="submit" id="btn-submit">Submit</button>
+      <button type="submit" id="btn-submit" value="Submit">Submit</button>
     </form>
   </div>
 

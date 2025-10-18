@@ -1,3 +1,4 @@
+
 :root {
     --green-lighter: hsl(148, 38%, 91%);
     --green-medium: hsl(169, 82%, 27%);
@@ -40,6 +41,17 @@ body {
     padding-inline-start: 0;
     margin-bottom: 1.5rem;
     letter-spacing: 0;
+}
+
+.success-message {
+    background-color: var(--green-lighter);
+    border: 1px solid var(--green-medium);
+    color: var(--grey-darker);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
 }
 
 label {
