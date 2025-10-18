@@ -25,83 +25,67 @@ body {
 }
 
 .contact-form {
-    /* تصميم مشابه للصورة مع توسيع العرض قليلاً */
-    width: clamp(300px, 90%, 48rem); /* 48rem هو عرض مثالي للكمبيوتر */
-    max-width: 90%; 
+    width: clamp(275px, 80%, 20rem);
+    max-width: 90%;
     background-color: var(--white);
-    padding: 1.5rem; /* تم تعديله */
+    padding: 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-    margin: 3rem auto; /* لضمان التوسيط إذا لم يعمل flex body */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
 }
 
 .contact-form h1 {
-    font-size: 1.5rem; /* حجم أكبر كما في الصورة */
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-inline-start: 0; /* إزالة الـ padding-inline-start */
+    padding-inline-start: 0;
     margin-bottom: 1.5rem;
     letter-spacing: 0;
 }
 
-/* أنماط الـ Label والنجوم المطلوبة */
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 400;
 }
 
-.contact-form span { /* للنجوم المطلوبة */
+.contact-form span {
     margin-inline-start: 0.2rem;
     font-weight: 700;
     color: var(--green-medium);
 }
 
-/*
- * ---------------------------------------
- * أنماط مجموعات الحقول
- * ---------------------------------------
- */
-
-/* مجموعة الاسم الأول والأخير (متقابلة) */
 .feildset-info {
     display: flex;
-    gap: 1rem; /* مسافة بين الحقلين */
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .feildset-info .form-group {
-    flex: 1; /* لجعل كل حقل يشغل نصف المساحة بالتساوي */
+    flex: 1;
 }
 
-/* أنماط الحقول التي تشغل العرض كاملاً (البريد، الرسالة، إلخ) */
 .full-width-group {
     margin-bottom: 1rem;
 }
 
-/*
- * ---------------------------------------
- * أنماط حقول الإدخال والرسائل
- * ---------------------------------------
- */
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; /* يجب أن تشغل 100% من حاويتها */
-    height: 2.5rem; /* تم تعديل الارتفاع */
-    border: 1px solid var(--grey-medium); /* تم تعديل سمك الحدود */
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid var(--grey-medium);
     border-radius: 8px;
-    padding: 0 1rem; /* حشو داخلي أفقي */
-    text-align: left; /* المحاذاة لليسار كما في الصورة */
+    padding: 0 1rem;
+    text-align: left;
     font-size: inherit;
 }
 
 textarea {
     min-height: 100px;
-    resize: none; /* إيقاف التكبير والتصغير */
-    padding: 0.5rem 1rem; /* حشو أعلى وأسفل */
+    resize: none;
+    padding: 0.5rem 1rem;
 }
 
-/* تأثيرات التفاعل (Hover/Focus) */
 input:hover,
 textarea:hover {
     border-color: var(--green-medium);
@@ -114,12 +98,6 @@ textarea:focus {
     border: 2px solid var(--green-medium);
 }
 
-
-/*
- * ---------------------------------------
- * أنماط نوع الاستعلام (Query Type)
- * ---------------------------------------
- */
 .feildset-query-type {
     border: none;
     padding: 0;
@@ -132,16 +110,16 @@ textarea:focus {
 
 .query-options {
     display: flex;
-    gap: 1rem; /* مسافة بين الخيارين */
+    gap: 1rem;
 }
 
 .radio-option {
     flex: 1;
     display: flex;
     align-items: center;
-    border: 1px solid var(--grey-medium); /* حد خارجي */
+    border: 1px solid var(--grey-medium);
     border-radius: 8px;
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     gap: 0.5rem;
     cursor: pointer;
 }
@@ -156,7 +134,6 @@ textarea:focus {
 }
 
 .radio-option input[type="radio"] {
-    /* تخصيص أنماط أزرار الراديو */
     appearance: none;
     -webkit-appearance: none;
     width: 1.2rem;
@@ -183,11 +160,6 @@ textarea:focus {
     transform: scale(1);
 }
 
-/*
- * ---------------------------------------
- * أنماط مربع الموافقة (Consent Checkbox)
- * ---------------------------------------
- */
 .div-checkbox-contacte {
     display: flex;
     align-items: center;
@@ -200,7 +172,6 @@ textarea:focus {
     margin: 0;
 }
 
-/* تخصيص أنماط مربع الاختيار */
 .div-checkbox-contacte input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -215,7 +186,7 @@ textarea:focus {
 }
 
 .div-checkbox-contacte input[type="checkbox"]::before {
-    content: "✓"; /* علامة صح */
+    content: "✓";
     color: var(--white);
     font-size: 0.8rem;
     font-weight: 700;
@@ -232,16 +203,10 @@ textarea:focus {
     transform: scale(1);
 }
 
-
-/*
- * ---------------------------------------
- * أنماط زر الإرسال
- * ---------------------------------------
- */
 #btn-submit {
     width: 100%;
-    height: 2.8rem; /* ارتفاع أكبر كما في الصورة */
-    border: none; /* إزالة الحدود */
+    height: 2.8rem;
+    border: none;
     border-radius: 8px;
     background-color: var(--green-medium);
     color: var(--white);
@@ -258,14 +223,8 @@ textarea:focus {
     background-color: var(--grey-darker);
 }
 
-/*
- * ---------------------------------------
- * استجابة الشاشات الصغيرة (Mobile)
- * ---------------------------------------
- * */
 @media (max-width: 768px) {
     .feildset-info {
-        /* إرجاع الاسم الأول والأخير للعرض العمودي على الأجهزة الصغيرة */
         flex-direction: column;
         gap: 0;
     }
