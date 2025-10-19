@@ -268,8 +268,9 @@ textarea:focus {
 @media (min-width: 48rem) {
 
     .contact-form {
-        width: clamp(400px, 90%, 44rem);
-        margin: 5vh;
+        width: clamp(650px, 90%, 50rem);
+        max-height: 700px;
+        margin: 8rem auto;
     }
 
     .success-message {
