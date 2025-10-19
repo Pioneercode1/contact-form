@@ -38,7 +38,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     padding-inline-start: 0;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
     letter-spacing: 0;
 }
 
@@ -47,7 +47,7 @@ body {
     border: 2px solid var(--green-medium);
     color: var(--white);
     padding: 1rem;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
     border-radius: 8px;
     text-align: center;
     position: fixed;
@@ -65,7 +65,7 @@ body {
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
     font-weight: 400;
 }
 
@@ -79,7 +79,7 @@ label {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 .feildset-info .form-group {
@@ -87,7 +87,7 @@ label {
 }
 
 .full-width-group {
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 input[type="text"],
@@ -125,11 +125,11 @@ textarea:focus {
 .feildset-query-type {
     border: none;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 .feildset-query-type legend {
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
 }
 
 .query-options {
@@ -201,7 +201,7 @@ textarea:focus {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
     font-size: 0.8rem;
 }
 
@@ -268,9 +268,10 @@ textarea:focus {
 @media (min-width: 48rem) {
 
     .contact-form {
-        width: clamp(650px, 90%, 50rem);
-        max-height: 700px;
+        width: clamp(770px, 90%, 60rem);
+        height: 650px;
         margin: 8rem auto;
+        font-size: 1rem;
     }
 
     .success-message {
@@ -282,7 +283,7 @@ textarea:focus {
     .feildset-info {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .query-options {
