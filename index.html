@@ -29,18 +29,18 @@
       <div class="feildset-info">
         <div class="form-group">
           <label for="first-name">First Name <span>*</span></label>
-          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+          <input type="text" id="first-name" name="first-name" pattern="[A-z]{2,}" placeholder="Enter your first name" required>
           <p id="first-name-required" class="class-p-required">This field is required</p>
         </div>
         <div class="form-group">
           <label for="last-name">Last Name <span>*</span></label>
-          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+          <input type="text" id="last-name" name="last-name" pattern="[A-z]{2,}" placeholder="Enter your last name" required>
           <p id="last-name-required" class="class-p-required">This field is required</p>
         </div>
       </div>
       <div class="form-group full-width-group">
         <label for="email">Email Address <span>*</span></label>
-        <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+        <input type="email" id="email" name="email" pattern="[A-z0-9]{2,}@[a-z]{2,}\.[a-z]{2,}" placeholder="Enter a valid email address" required>
         <p id="email-required" class="class-p-required">Please enter a valid email address</p>
       </div>
 
@@ -58,7 +58,7 @@
           <p id="query-type-required" class="class-p-required">Please select a query type</p>
         </div>
       </fieldset>
-
+      
       <div class="form-group full-width-group">
         <label for="message">Message <span>*</span></label>
         <textarea id="message" rows="5" placeholder="Your message" required></textarea>
