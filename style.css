@@ -22,6 +22,9 @@ body {
     font-family: "Saira", sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form {
@@ -31,7 +34,6 @@ body {
     padding: 1.5rem;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 3rem auto;
 }
 
 .contact-form h1 {
@@ -57,6 +59,7 @@ body {
     width: auto;
     z-index: 999;
 }
+
 .class-p-required {
     display: none;
     color: var(--red);
