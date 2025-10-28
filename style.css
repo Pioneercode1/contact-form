@@ -273,7 +273,6 @@ textarea:focus {
     .contact-form {
         width: clamp(770px, 90%, 60rem);
         height: 650px;
-        margin: 8rem auto;
         font-size: 1rem;
     }
 
